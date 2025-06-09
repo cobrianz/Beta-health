@@ -367,35 +367,44 @@ body{
   display: flex;
   align-items: center;
   border: 1px solid var(--bg-color);
-  padding: 0.75rem;
   border-radius: 5px;
-
+  padding-right: 1rem;
   background-color: var(--bg-color);
 }
 
 .input-wrapper input,
 .input-wrapper select {
+  padding: 1rem;
   flex: 1;
   border: none;
   outline: none;
   font-size: 1rem;
+  background: transparent;
 }
 
-.appointment-button {
-  background-color: #2563eb;
-  color: white;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1rem;
-  width: 200px;
-  align-self: flex-start;
+.input-wrapper select option:first-child{
+  color: var(--gray-400);
+}
+
+.form-bottom{
+  display: flex;
+  justify-content: space-between;
 }
 
 .gender-options {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   padding-top: 0.5rem;
 }
+
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer
+  }
+
+  .gender-options input[type="radio"] {
+    transform: scale(1.3);
+    }

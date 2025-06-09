@@ -54,14 +54,16 @@ const Appointment = () => {
             </select>
           </div>
         </div>
-
-        <button type="submit" className="appointment-button">Confirm Appointment</button>
+        <div className="form-bottom">
+          
+        <button type="submit" className="btn">Confirm Appointment</button>
 
         <div className="gender-options">
           <label><input type="radio" name="gender" /> Male</label>
           <label><input type="radio" name="gender" /> Female</label>
           <label><input type="radio" name="gender" /> Do not wish to disclose</label>
         </div>
+    </div>
       </form>
     </div>
   );

@@ -230,7 +230,10 @@ body{
 .features-section {
   padding: 2rem;
   text-align: center;
-  background: red;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .features-section h2 {
@@ -271,3 +274,84 @@ body{
   text-align: left;
 }
 
+
+/* HIGHLIGHT STYLING */
+
+.telehealth-section {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.telehealth-content {
+  flex: 1;
+}
+
+.telehealth-content h3 {
+  color: var(--green-400);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.telehealth-content h2 {
+  font-size: 2rem;
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+}
+
+.telehealth-content p {
+  font-size: 1rem;
+  color: var(--gray-500);
+  margin-bottom: 1.5rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.benefit-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card span {
+  font-size: 0.875rem;
+  color: var(--gray-700);
+}
+
+.telehealth-image {
+  flex: 1;
+  text-align: center;
+}
+
+.telehealth-image p {
+  font-style: italic;
+  color: var(--gray-500);
+}
+
+@media (max-width: 768px) {
+  .telehealth-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .telehealth-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}

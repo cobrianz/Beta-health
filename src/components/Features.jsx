@@ -4,7 +4,7 @@ const Features = () => {
   return (
       <section className="features-section">
           <span className="green">What we offer</span>
-      <h2>Features Providers and Patients Love</h2>
+      <h2 className="title">Features Providers and Patients Love</h2>
       <div className="features-grid">
         {featuresData.map((feature, index) => (
           <div key={index} className="feature-card">

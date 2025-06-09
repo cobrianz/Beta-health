@@ -11,27 +11,29 @@ const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link className="link" to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link className="link" to="/about">About</Link>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <Link className="link" to="/services">Services</Link>
           </li>
           <li>
-            <Link to="/doctors">Our Doctors</Link>
+            <Link className="link" to="/doctors">Our Doctors</Link>
           </li>
           <li>
-            <Link to="/plans">Plans & Pricing</Link>
+            <Link className="link" to="/plans">Plans & Pricing</Link>
           </li>
         </ul>
       </nav>
       <div className="navbar-right">
-        <Link to="/appointment">Appointment</Link>
-        <Link to="/account">
-          <User size={20} />
+        <span>+254 702 764 907</span>
+        <Link className="btn" to="/appointment">Appointment</Link>
+        <Link className="account-link" to="/login">
+          <User size={30} />
         </Link>
+    
       </div>
     </div>
   );

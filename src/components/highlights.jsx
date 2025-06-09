@@ -1,5 +1,5 @@
-import { CheckCircle } from "phosphor-react";
-import patientImg from "../assets/patients-img";
+import { CheckCircle } from "@phosphor-icons/react";
+import patientImg from "../assets/patients-img.png";
 const Highlight = () => {
   const benefits = [
     "Pay Less",
@@ -13,9 +13,9 @@ const Highlight = () => {
   return (
     <section className="highlight-section">
       <div className="highlight-content">
-        <h3>How We Help Patients</h3>
+        <small>How We Help Patients</small>
         <h2>
-          We help patients with all the online-based services of Highlight &
+          We help patients with all the online-based services of healthcare &
           Telemedicine.
         </h2>
         <p>
@@ -32,9 +32,9 @@ const Highlight = () => {
           ))}
         </div>
       </div>
-      <div className="higlight-image">
-        <img src={patientImg} alt="" />
-      </div>
+
+        <img src={patientImg} alt="" className="highlight-image" />
+
     </section>
   );
 };

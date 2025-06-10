@@ -1,9 +1,10 @@
 import React from "react";
 import "./DoctorsSection.css";
-import doctor-1 from "../assets/doc1.jpg";
-import doctor-2 from "../assets/doc2.jpg";
-import doctor-3 from "../assets/doc3.jpg";
-import doctor-4 from "../assets/doc4.jpg";
+import doc1 from "../assets/doc1.jpg";
+import doc2 from "../assets/doc2.jpg";
+import doc3 from "../assets/doc3.jpg";
+import doc4 from "../assets/doc4.jpg";
+
 const doctors = [
   { name: "Dr. Smith McDonald", title: "Cardiologist", img: "doc1.jpg" },
   { name: "Dr. Derek McDonald", title: "Cardiologist", img: "doc2.jpg" },

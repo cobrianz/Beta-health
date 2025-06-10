@@ -1,18 +1,22 @@
-import React from "react";
-import "./DoctorsSection.css";
-import doc1 from "../assets/doc1.jpg";
-import doc2 from "../assets/doc2.jpg";
-import doc3 from "../assets/doc3.jpg";
-import doc4 from "../assets/doc4.jpg";
+import {
+  FacebookLogo,
+  TwitterLogo,
+  InstagramLogo,
+  LinkedinLogo,
+} from "@phosphor-icons/react";
+import doc1 from "../assets/doctor-1.jpg";
+import doc2 from "../assets/doctor-2.jpg";
+import doc3 from "../assets/doctor-3.jpg";
+import doc4 from "../assets/doctor-4.jpg";
 
 const doctors = [
-  { name: "Dr. Smith McDonald", title: "Cardiologist", img: "doc1.jpg" },
-  { name: "Dr. Derek McDonald", title: "Cardiologist", img: "doc2.jpg" },
-  { name: "Dr. Manuel Tannehill", title: "Orthopedic", img: "doc3.jpg" },
+  { name: "Dr. Smith McDonald", title: "Cardiologist", img: doc1 },
+  { name: "Dr. Derek McDonald", title: "Cardiologist", img: doc2 },
+  { name: "Dr. Manuel Tannehill", title: "Orthopedic", img: doc3 },
   {
     name: "Dr. Virginia Erickson",
     title: "Gastroenterologist",
-    img: "doc4.jpg",
+    img: doc4,
     social: true,
   },
 ];
@@ -24,10 +28,7 @@ const DoctorsSection = () => {
       <h2 className="title">Meet Our Specialized Doctors</h2>
       <div className="doctors-container">
         {doctors.map((doc, index) => (
-          <div
-            className={`doctor-card ${doc.social ? "hover-reveal" : ""}`}
-            key={index}
-          >
+          <div className="doctor-card" key={index}>
             <img src={doc.img} alt={doc.name} className="doctor-img" />
             <div className="doctor-info">
               <h3>{doc.name}</h3>
@@ -35,10 +36,10 @@ const DoctorsSection = () => {
             </div>
             {doc.social && (
               <div className="social-icons">
-                <i className="fab fa-facebook-f"></i>
-                <i className="fab fa-twitter"></i>
-                <i className="fab fa-linkedin-in"></i>
-                <i className="fab fa-instagram"></i>
+                <FacebookLogo size={20} weight="fill" />
+                <TwitterLogo size={20} weight="fill" />
+                <LinkedinLogo size={20} weight="fill" />
+                <InstagramLogo size={20} weight="fill" />
               </div>
             )}
           </div>

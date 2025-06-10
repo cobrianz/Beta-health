@@ -418,7 +418,7 @@ body{
     
     .subtitle {
       font-size: 16px;
-      color: green;
+      color: #3aa17e;
       margin-bottom: 10px;
     }
     
@@ -456,43 +456,34 @@ body{
       transform: scale(1.05);
     }
     
-    .overlay {
+    .content {
       position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.65);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      padding: 20px;
-    }
-    
-    .doctor-card:hover .overlay {
-      opacity: 1;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      transition: all 0.3s ease;
     }
     
     .doctor-info {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    
-    .doctor-info h3 {
-      margin: 0;
-      font-size: 18px;
-    }
-    
-    .doctor-info p {
-      margin: 5px 0 0;
-      font-size: 14px;
-      color: #ccc;
+      transition: opacity 0.3s ease;
     }
     
     .social-icons {
-      display: flex;
-      gap: 12px;
+      display: none;
+      justify-content: center;
+      gap: 10px;
       margin-top: 10px;
+    }
+    
+    /* === HOVER EFFECT === */
+    .doctor-card:hover .doctor-info {
+      opacity: 0;
+    }
+    
+    .doctor-card:hover .social-icons {
+      display: flex;
     }
     

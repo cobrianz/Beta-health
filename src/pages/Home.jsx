@@ -3,6 +3,8 @@ import Hero from '../components/hero';
 import Highlight from "../components/highlights";
 import Appointment from "../components/Appointment";
 import DoctorsSection from '../components/DoctorsSection';
+import TelehealthSolutions from './../components/TelehealthSolutions';
+import NewsletterSignup from './../components/NewsletterSignup';
 const Home = () => {
   return (
     <div className="container">
@@ -11,6 +13,8 @@ const Home = () => {
       <Highlight />
       <Appointment />
       <DoctorsSection />
+      <TelehealthSolutions />
+      <NewsletterSignup />
     </div>
   );
 };

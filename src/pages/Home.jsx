@@ -6,7 +6,6 @@ import DoctorsSection from '../components/DoctorsSection';
 import TelehealthSolutions from './../components/TelehealthSolutions';
 import NewsletterSignup from './../components/NewsletterSignup';
 import Footer from '../components/Footer';
-import TelehealthComponent from '../components/TelehealthComponent';
 const Home = () => {
   return (
     <div className="container">
@@ -16,7 +15,6 @@ const Home = () => {
       <Appointment />
       <DoctorsSection />
       <TelehealthSolutions />
-      <TelehealthComponent />
       <NewsletterSignup />
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { PlusCircle, MinusCircle } from "@phosphor-icons/react";
-
+import solImage from "../assets/solutions-img.jpg";
 const FEATURES = [
   {
     title: "Improved Health Access",
@@ -34,7 +34,7 @@ export default function TelehealthSolutions() {
   return (
     <section className="telehealth-section">
       <div className="telehealth-text">
-        <p className="telehealtsubtitle">Consumer Telehealth Solutions</p>
+        <p className="telehealth-subtitle">Consumer Telehealth Solutions</p>
         <h2 className="telehealth-title">
           The telehealth platform provides <br /> solutions to all sorts of
           problems
@@ -64,7 +64,7 @@ export default function TelehealthSolutions() {
       <div className="telehealth-image-container">
         <div className="telehealth-image-wrapper">
           <img
-            src="/telehealth-doctor.jpg"
+            src={solImage}
             alt="Telehealth Doctor"
             className="telehealth-image"
           />

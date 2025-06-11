@@ -7,7 +7,7 @@ import {
 } from "@phosphor-icons/react";
 
 
-const Appointment = () => {
+const AppointmentForm = () => {
   return (
     <div className="appointment-container">
       <p className="green">Make An Appointment</p>
@@ -18,7 +18,7 @@ const Appointment = () => {
       <form className="appointment-form">
         <div className="input-group">
           <div className="input-wrapper">
-            <input type="text" placeholder="Full Name"/>
+            <input type="text" placeholder="Full Name" />
             <User size={20} />
           </div>
           <div className="input-wrapper">
@@ -29,7 +29,7 @@ const Appointment = () => {
 
         <div className="input-group">
           <div className="input-wrapper">
-            <input type="tel" placeholder="Phone Number"/>
+            <input type="tel" placeholder="Phone Number" />
             <Phone size={20} />
           </div>
           <div className="input-wrapper">
@@ -41,32 +41,43 @@ const Appointment = () => {
         <div className="input-group">
           <div className="input-wrapper">
             <select defaultValue="">
-              <option value="" disabled>Select Department</option>
+              <option value="" disabled>
+                Select Department
+              </option>
               <option value="Cardiology">Cardiology</option>
               <option value="Neurology">Neurology</option>
             </select>
           </div>
           <div className="input-wrapper">
             <select defaultValue="">
-              <option value="" disabled>Select Doctor</option>
+              <option value="" disabled>
+                Select Doctor
+              </option>
               <option value="Dr. Smith">Dr. Smith</option>
               <option value="Dr. Alice">Dr. Alice</option>
             </select>
           </div>
         </div>
         <div className="form-bottom">
-          
-        <button type="submit" className="btn">Confirm Appointment</button>
+          <button type="submit" className="btn">
+            Confirm Appointment
+          </button>
 
-        <div className="gender-options">
-          <label><input type="radio" name="gender" /> Male</label>
-          <label><input type="radio" name="gender" /> Female</label>
-          <label><input type="radio" name="gender" /> Do not wish to disclose</label>
+          <div className="gender-options">
+            <label>
+              <input type="radio" name="gender" /> Male
+            </label>
+            <label>
+              <input type="radio" name="gender" /> Female
+            </label>
+            <label>
+              <input type="radio" name="gender" /> Do not wish to disclose
+            </label>
+          </div>
         </div>
-    </div>
       </form>
     </div>
   );
 };
 
-export default Appointment;
+export default AppointmentForm;

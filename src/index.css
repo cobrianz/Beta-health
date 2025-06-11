@@ -770,8 +770,9 @@ body{
   justify-content: space-between;
   min-height: 50vh;
   margin: 4rem auto;
-  max-width: 1800px;
+  max-width: 1400px;
   gap: var(--spacing-lg);
+  flex-wrap: wrap;
 
 }
 
@@ -788,7 +789,7 @@ body{
 
 .title {
   color: var(--black);
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: left;
 }
 
@@ -820,7 +821,7 @@ body{
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -854,14 +855,10 @@ body{
 
 .dynamic_header {
   width: 100%;
-  background: var(--bg-color);
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 5rem 0;
 
 }
 
@@ -880,6 +877,7 @@ body{
   font-weight: bold;
   margin: 0;
   z-index: 1;
+  font-size: 3rem;
 }
 
 .dynamic_header .nav-links {

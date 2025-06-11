@@ -34,7 +34,7 @@ export default function TelehealthSolutions() {
   return (
     <section className="telehealth-section">
       <div className="telehealth-text">
-        <h5 className="telehealth-subtitle">Consumer Telehealth Solutions</h5>
+        <p className="telehealtsubtitle">Consumer Telehealth Solutions</p>
         <h2 className="telehealth-title">
           The telehealth platform provides <br /> solutions to all sorts of
           problems

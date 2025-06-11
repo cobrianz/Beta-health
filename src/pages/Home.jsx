@@ -5,6 +5,7 @@ import Appointment from "../components/Appointment";
 import DoctorsSection from '../components/DoctorsSection';
 import TelehealthSolutions from './../components/TelehealthSolutions';
 import NewsletterSignup from './../components/NewsletterSignup';
+import Footer from '../components/Footer';
 const Home = () => {
   return (
     <div className="container">
@@ -15,6 +16,7 @@ const Home = () => {
       <DoctorsSection />
       <TelehealthSolutions />
       <NewsletterSignup />
+      <Footer />
     </div>
   );
 };

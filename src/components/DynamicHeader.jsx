@@ -10,14 +10,14 @@ const DynamicHeader = () => {
     .replace(/\b\w/g, (char) => char.toUpperCase());
 
   return (
-      <div className=".dynamic_header">
-        <div className="dynamic_header">          
-      <h1 className=".dynamic_header-title">{formattedTitle}</h1>
+      <div className="dynamic_header">
+        <div className="dynamic_header-container">          
+      <h1 className="dynamic_header-title">{formattedTitle}</h1>
       <nav className="nav-links">
         <Link to="/" className="nav-link">
           Home
         </Link>
-        <span> • </span>
+        <span className="circle"></span>
         <Link to={location.pathname} className="nav-link active">
           {formattedTitle}
         </Link>

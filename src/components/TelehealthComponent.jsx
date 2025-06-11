@@ -2,6 +2,7 @@ import React from "react";
 import { CheckCircle } from "@phosphor-icons/react";
 import providerImage from "../assets/provider-img-2.png";
 import providerImageShape from "../assets/provider-shape-2.png";
+
 const TelehealthComponent = () => {
   return (
     <div className="telehealth-container">
@@ -35,8 +36,8 @@ const TelehealthComponent = () => {
         </div>
       </div>
       <div className="image-section">
-        <img src={providerImage} alt="" />
-        <img src={providerImageShape} alt="" className="doctor-image" />
+        <img src={providerImage} alt="Doctor" />
+        <img src={providerImageShape} alt="Shape" className="doctor-image" />
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChatTeardropDots } from "@phosphor-icons/react";
 import test1 from "../assets/client-say-2.jpg";
 import test2 from "../assets/client-say-3.jpg";
 import test3 from "../assets/client-say-4.jpg";
@@ -63,7 +62,6 @@ const TestimonialSlider = () => {
                   />
                   <p className="testimonial-text">{testimonial.text}</p>
                   <div className="testimonial-author">
-                    <ChatTeardropDots size={20} color="#00a3a3" />
                     <span>{testimonial.name}</span>
                     <span className="testimonial-title-text">
                       {testimonial.title}

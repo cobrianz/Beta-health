@@ -240,9 +240,11 @@ body{
 
 .title {
   font-size: 2rem;
-  margin-bottom: 2rem;
   color: var(--slateblue-800);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
 }
 
 .features-grid {
@@ -412,10 +414,9 @@ body{
     /* DOCTOR SECTION */
 
     .doctors-section {
-      background-color: var(--bg-color);
       text-align: center;
       padding: var(--spacing-xl) var(--spacing-md);
-      margin-top: 3rem;
+      margin: 3rem auto;
     }
     
     .subtitle {
@@ -444,8 +445,6 @@ body{
       height: 300px;
       overflow: hidden;
       border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-lg);
-      background-color: var(--white);
       cursor: pointer;
       transition: transform var(--transition-medium);
     }
@@ -917,7 +916,6 @@ body{
 /* TESTIMONIALS */
 
 .testimonial-container {
-  background-color: #e6f0fa;
   padding: 40px 20px;
   text-align: center;
   position: relative;
@@ -925,14 +923,14 @@ body{
 }
 
 .testimonial-label {
-  color: #00a3a3;
+  color: var(--green-600);
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .testimonial-title {
-  color: #1a3c6e;
+  color: var(--slateblue-800);
   font-size: 2rem;
   margin: 10px 0 20px;
 }
@@ -956,11 +954,11 @@ body{
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 4px solid #00a3a3;
+  border: 4px solid var(--green-600);
 }
 
 .testimonial-text {
-  color: #1a3c6e;
+  color: var(--gray-700);
   font-size: 1.1rem;
   line-height: 1.5;
   max-width: 600px;
@@ -972,12 +970,13 @@ body{
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: #1a3c6e;
+  color: var(--gray-800);
   font-weight: 500;
+  flex-direction: column;
 }
 
 .testimonial-title-text {
-  color: #00a3a3;
+  color: var(--green-500);
   font-size: 0.9rem;
   margin-left: 5px;
 }
@@ -992,11 +991,11 @@ body{
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #d3e0f0;
+  background-color: var(--bg-color);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .dot.active {
-  background-color: #00a3a3;
+  background-color: var(--slateblue-500);
 }

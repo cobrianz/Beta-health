@@ -4,7 +4,6 @@ import DoctorsSection from './../components/DoctorsSection';
 import NewsletterSignup from './../components/NewsletterSignup';
 import Footer from './../components/Footer';
 import TelehealthComponent from './../components/TelehealthComponent';
-import TelehealthSolutions from './../components/TelehealthSolutions';
 import Highlight from './../components/highlights';
 
 const About = () => {
@@ -12,7 +11,6 @@ const About = () => {
     <div>
       <DynamicHeader />
       <Highlight />
-      <TelehealthSolutions />
       <TelehealthComponent />
       <TestimonialSlider />
       <DoctorsSection />

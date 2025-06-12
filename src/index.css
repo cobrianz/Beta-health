@@ -1000,3 +1000,53 @@ body{
 .dot.active {
   background-color: var(--slateblue-500);
 }
+
+.about-us-container {
+  background: url('./assets/about-img.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.about-us-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-us-label {
+  color: var(--green-600);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.about-us-title {
+  color: var(--slateblue-800);
+  font-size: 2.2rem;
+  margin: 0 0 15px;
+  font-weight: bold;
+}
+
+.about-us-text {
+  color: var(--gray-600);
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+.about-us-icon {
+  display: block;
+  margin-left: auto;
+}

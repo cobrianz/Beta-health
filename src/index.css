@@ -1100,13 +1100,13 @@ body{
 }
 
 .service-title {
-  color: #1a3c6e;
+  color: var(--slateblue-800);
   font-size: 1.2rem;
   margin: 10px 0;
 }
 
 .service-description {
-  color: #1a3c6e;
+  color: var(--gray-700);
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 15px;

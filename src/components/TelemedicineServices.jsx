@@ -16,7 +16,7 @@ const services = [
     title: "Digestive Health",
     description:
       "Expert care for digestive issues with personalized treatment plans.",
-    icon: <Asclepius  size={40} color="#1e90ff" />,
+    icon: <Asclepius  size={80} color="#1e90ff" />,
     readMore: "/digestive-health",
   },
   {
@@ -24,14 +24,14 @@ const services = [
     title: "COVID-19 Consulting",
     description:
       "Professional advice and support for COVID-19 related concerns.",
-    icon: <User size={40} color="#1e90ff" />,
+    icon: <User size={80} color="#1e90ff" />,
     readMore: "/covid-19-consulting",
   },
   {
     id: 3,
     title: "Special Follow Up",
     description: "Dedicated follow-up to ensure ongoing health and recovery.",
-    icon: <Phone size={40} color="#1e90ff" />,
+    icon: <Phone size={80} color="#1e90ff" />,
     readMore: "/special-follow-up",
   },
   {
@@ -39,7 +39,7 @@ const services = [
     title: "Pediatric Services",
     description:
       "Comprehensive care for children with routine and specialized treatments.",
-    icon: <Baby size={40} color="#1e90ff" />,
+    icon: <Baby size={80} color="#1e90ff" />,
     readMore: "/pediatric-services",
   },
   {
@@ -47,14 +47,14 @@ const services = [
     title: "Digital Pharmacy",
     description:
       "Access medications and health products delivered to your door.",
-    icon: <ShoppingCart size={40} color="#1e90ff" />,
+    icon: <ShoppingCart size={80} color="#1e90ff" />,
     readMore: "/digital-pharmacy",
   },
   {
     id: 6,
     title: "Mental Health",
     description: "Online counseling and therapy for mental well-being.",
-    icon: <Brain size={40} color="#1e90ff" />,
+    icon: <Brain size={80} color="#1e90ff" />,
     readMore: "/mental-health",
   },
 ];
@@ -88,15 +88,6 @@ const TelemedicineServices = () => {
             </motion.div>
           ))}
         </AnimatePresence>
-      </div>
-      <div className="pagination">
-        <button>
-          &lt;
-        </button>
-    
-        <button>
-          &gt;
-        </button>
       </div>
     </div>
   );

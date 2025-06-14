@@ -1053,6 +1053,7 @@ body{
 
 /* SERVICES */
 .telemedicine-services-container {
+  background-color: var(--green-100);
   padding: 40px 20px;
   text-align: center;
   min-height: 800px;
@@ -1090,8 +1091,9 @@ body{
   max-width: 400px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 1px 2px 0 2px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;}
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: var(--white);
+}
 
 .service-icon {
   margin-bottom: 15px;

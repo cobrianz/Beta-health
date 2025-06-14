@@ -1051,15 +1051,18 @@ body{
   margin-left: auto;
 }
 
+/* SERVICES */
 .telemedicine-services-container {
-  background-color: #e6f0fa;
   padding: 40px 20px;
   text-align: center;
-  min-height: 600px;
+  min-height: 800px;
+  max-width: ;
+  background-color: red
 }
 
+
 .services-label {
-  color: #00a3a3;
+  color: var(--green-500);
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1068,7 +1071,7 @@ body{
 }
 
 .services-title {
-  color: #1a3c6e;
+  color: var(--slateblue-700);
   font-size: 2rem;
   margin-bottom: 30px;
   font-weight: bold;
@@ -1078,7 +1081,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 

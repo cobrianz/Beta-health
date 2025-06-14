@@ -73,7 +73,7 @@ const TelemedicineServices = () => {
   };
 
   return (
-    <div className="telemedicine-services-container">
+    <div className="telemedicine-services-container container">
       <span className="services-label">Our Services</span>
       <h2 className="services-title">Telemedicine Professional Services</h2>
       <div className="services-grid">

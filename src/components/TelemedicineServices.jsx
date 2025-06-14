@@ -7,6 +7,7 @@ import {
   Baby,
   ShoppingCart,
   Brain,
+  RadioButtonIcon,
 } from "@phosphor-icons/react";
 
 const services = [
@@ -59,38 +60,29 @@ const services = [
 ];
 
 const TelemedicineServices = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
-  const totalPages = Math.ceil(services.length / itemsPerPage);
-
-  const paginatedServices = services.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
   return (
     <div className="telemedicine-services-container container">
       <span className="services-label">Our Services</span>
       <h2 className="services-title">Telemedicine Professional Services</h2>
       <div className="services-grid">
         <AnimatePresence>
-          {paginatedServices.map((service) => (
+          {services.map((service) => (
             <motion.div
               key={service.id}
               className="service-card"
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.5 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
             >
-              <div className="service-icon">{service.icon}</div>
+              <div className="service-icon">
+                {service.icon}
+              </div>
               <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
-              <a href={service.readMore} className="read-more">
+              <p className="service-description">
+                {service.description}
+              </p>
+              <a href={service.readMore} className="read-more-link">
                 Read More
               </a>
             </motion.div>
@@ -98,29 +90,11 @@ const TelemedicineServices = () => {
         </AnimatePresence>
       </div>
       <div className="pagination">
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className="pagination-button"
-        >
+        <button>
           &lt;
         </button>
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-          <button
-            key={page}
-            onClick={() => handlePageChange(page)}
-            className={`pagination-button ${
-              currentPage === page ? "active" : ""
-            }`}
-          >
-            {page}
-          </button>
-        ))}
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className="pagination-button"
-        >
+    
+        <button>
           &gt;
         </button>
       </div>

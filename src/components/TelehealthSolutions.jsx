@@ -32,7 +32,7 @@ export default function TelehealthSolutions() {
   };
 
   return (
-    <section className="telehealth-section">
+    <section className="telehealth-section container">
       <div className="telehealth-text">
         <p className="telehealth-subtitle">Consumer Telehealth Solutions</p>
         <h2 className="telehealth-title">
